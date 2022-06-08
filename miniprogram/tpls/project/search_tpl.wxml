@@ -3,7 +3,7 @@
 		<view class="bar search bg-white">
 			<view class="search-form round">
 				<text class="icon-search"></text>
-				<input type="text" model:value="{{search}}" placeholder="请输入搜索内容" confirm-type="search" bindconfirm="bindSearchConfirm" maxlength="20"></input>
+				<input type="text" model:value="{{search}}" placeholder="请输入搜索内容(按需求类型或地点)" confirm-type="search" bindconfirm="bindSearchConfirm" maxlength="20"></input>
 				<text wx:if="{{search.length > 0}}" bindtap="bindClearKeyTap" class="icon-roundclosefill text-l text-gray clear"></text>
 			</view>
 			<view class="action">
